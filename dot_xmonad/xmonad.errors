@@ -1,0 +1,17 @@
+$ ghc --make xmonad.hs -i -ilib -fforce-recomp -main-is main -dynamic -v0 -outputdir /home/cuf/.xmonad/build-x86_64-linux -o /home/cuf/.xmonad/xmonad-x86_64-linux
+
+xmonad.hs:487:32: warning: [-Wdeprecations]
+    In the use of ‘docksEventHook’
+    (imported from XMonad.Hooks.ManageDocks):
+    Deprecated: "Use docks instead."
+    |
+487 |         , handleEventHook    = docksEventHook
+    |                                ^^^^^^^^^^^^^^
+
+xmonad.hs:501:40: warning: [-Wdeprecations]
+    In the use of ‘namedScratchpadFilterOutWorkspacePP’
+    (imported from XMonad.Util.NamedScratchpad):
+    Deprecated: "Use XMonad.Hooks.StatusBar.PP.filterOutWsPP [scratchpadWorkspaceTag] instead"
+    |
+501 |         , logHook = dynamicLogWithPP $ namedScratchpadFilterOutWorkspacePP $ xmobarPP
+    |                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

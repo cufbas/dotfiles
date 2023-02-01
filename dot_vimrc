@@ -1,0 +1,12 @@
+set number
+syntax on 
+colorscheme dracula
+set expandtab
+set tabstop=4
+filetype on
+filetype plugin indent on
+set cursorline
+execute pathogen#infect()
+let g:airline#extensions#tabline#enabled = 1
+let NERDTreeShowHidden=1
+
